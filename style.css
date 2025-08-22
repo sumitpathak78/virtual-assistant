@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  font-family: "Audiowide", sans-serif;
+}
+
+/* Logo Image */
+#logo {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+h2 {
+  color: white;
+  font-size: 6vw;
+  margin-bottom: 10px;
+}
+
+#name {
+  color: aqua;
+  font-size: 7vw;
+}
+
+#va {
+  color: aquamarine;
+  font-size: 6vw;
+}
+
+#my-name {
+  color: aqua;
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+
+/* Voice Animation Image */
+#voice {
+  width: 120px;
+  display: none;
+  margin: 20px 0;
+}
+
+/* Microphone Button */
+#btn {
+  width: 90%;
+  max-width: 400px;
+  background: linear-gradient(to right, aqua, aquamarine);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 4vw;
+  border-radius: 30px;
+  color: black;
+  box-shadow: 0 0 10px aqua, 0 0 10px aquamarine;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover Effect on Button */
+#btn:hover {
+  box-shadow: 0 0 15px aqua, 0 0 15px aquamarine;
+  letter-spacing: 1px;
+}
+
+/* Mic Icon */
+.photo {
+  width: 24px;
+}
+
+/* Responsive Styling for Larger Screens */
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+  #va {
+    font-size: 26px;
+  }
+
+  #my-name {
+    font-size: 20px;
+  }
+
+  #btn {
+    font-size: 18px;
+    max-width: 400px;
+  }
+
+  .photo {
+    width: 24px;
+  }
+
+  #voice {
+    width: 120px;
+  }
+}
